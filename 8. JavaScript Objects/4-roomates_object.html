@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>El-Kanemi, Room 32 Roommates</h1>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+
+// Create an object
+
+const roomMate1 = {
+    firstName: 'Etomchukwu',
+    lastName: "Oguejiofor",
+    id: 1,
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+const roomMate2 = {
+    firstName: 'Oluwatamilore',
+    lastName: "Shobayo",
+    id: 2,
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+const roomMate3 = {
+    firstName: 'Olajide',
+    lastName: "Kehinde",
+    id: 3,
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+const roomMate4 = {
+    firstName: 'Habeeb',
+    lastName: "Azeez",
+    id: 4,
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+document.getElementById("demo1").innerHTML = "Roommate 1: " + roomMate1.fullName();
+document.getElementById("demo2").innerHTML = "Roommate 2: " + roomMate2.fullName();
+document.getElementById("demo3").innerHTML = "Roommate 3: " + roomMate3.fullName();
+document.getElementById("demo4").innerHTML = "Roommate 4: " + roomMate4.fullName();
+</script>
+
+</body>
+</html>
