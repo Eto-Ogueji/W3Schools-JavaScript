@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h2>Nested JavaScript Objects and Arrays.</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        let x = ""
+        const robot = {
+            company: "Ogueji",
+            branch: "lekki",
+
+            Robots: [
+                {model: "Model V", variations: ["1", "1X", "2.0"]},
+                {model: "Model Q", variations: ["1", "1X", "2.0"]},
+                {model: "Model O", variations: ["1", "1X", "2.0"]}
+            ]
+        }
+
+        for (let i in robot.Robots) {
+            x += "<h2>" + robot.Robots[i].model + "</h2>";
+            for (let j in robot.Robots[i].variations) {
+                x += robot.Robots[i].variations[j] + "<br>"
+            }
+        }
+
+        document.getElementById("demo").innerHTML = x
+    </script>
+</body>
+</html>
